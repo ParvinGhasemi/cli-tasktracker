@@ -1,0 +1,10 @@
+# The virtual environment folder
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# IDE/editor specific files
+.idea/
+.DS_Store
