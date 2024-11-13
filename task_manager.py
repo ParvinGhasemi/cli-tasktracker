@@ -21,7 +21,7 @@ class TaskManager:
     def save_tasks(self):
         try:
             with open(self.storage_files, 'w') as file:
-                json.dump([task.to_dict() for task in self.tasks], file)
+                json.dump([task.to_dict() for task in self.tasks], file, indent=4)
             # print("Task saved successfully.")
         except IOError as e:
             print(f'Error saving the task: {e}')
